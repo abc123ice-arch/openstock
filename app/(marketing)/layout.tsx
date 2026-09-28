@@ -30,7 +30,7 @@ export default async function MarketingLayout({ children }: { children: React.Re
                         <Image src="/assets/images/logo.png" alt="OpenStock" width={140} height={35} priority />
                     </Link>
                     <nav className="hidden items-center gap-1 md:flex">
-                        {[['/#inside', 'Product'], ['/#data', 'Data'], ['/#self-host', 'Self-host'], ['/about', 'About']].map(([href, label]) => (
+                        {[['/#inside', 'Product'], ['/crypto-radar', 'Crypto Radar'], ['/#data', 'Data'], ['/#self-host', 'Self-host'], ['/about', 'About']].map(([href, label]) => (
                             <Link key={href} href={href} className="side-item h-8 font-semibold">{label}</Link>
                         ))}
                         <Link href="/sponsor" className="side-item h-8 gap-2 font-semibold text-brand-ink hover:text-brand-ink">
